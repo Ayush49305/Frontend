@@ -20,3 +20,21 @@ div{
   padding:17px 14px 15px 10px;  /*Shortcut method,which goes in clockwise direction.*/
   margin:50px 20px 30px 45px;  /*Space between two boxes.*/
 }
+button{
+  display:block;
+
+}
+a{
+  display:block; /*we can change the property of element from inline to block &vice versa.for ex.anchor is inline element but by using display:block we change its property.And if we use inline-block it will be similar be but we can set marging and padding.*/
+}
+h2{
+  background-color: rgba(255,0,0,0.5);/*    rgba(red, green, blue, alpha) here alpha is opacity,which is between 0-1*/
+  display:inline-block;
+}
+#h22{
+  /*display:none;  if we use this then element will invisible but space will not accquire space*/
+  visibility: hidden; /*For hidden element but aqquire space*/
+}
+h3{
+  background-color: rgba(255,0,0,1);  
+}

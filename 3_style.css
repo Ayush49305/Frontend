@@ -1,0 +1,53 @@
+#box1{
+  height:100px;
+  width:200px;
+  background-color:blue;
+  font-size:20px;
+}
+
+#box2{
+  height:50px;
+  width:50%; /* % heritate the property of width according to its parent div which is 50% width of parent element*/
+  background-color:red;
+  font-size:2em; /* em heritate the proprty of font size,so 2em double the size of parent font size.1 em means 1 times and 2 em means 2 times.*/
+  width:5rem; /*rem heritate the property according to reeot element.*/
+}
+
+div{
+  height:100px;
+  width:100px;
+  border:2px solid black;
+  display:inline-block;
+}
+
+#box3{
+  background-color:blueviolet;
+  position:static; /*static will not allow this to move anywhere*/
+}
+
+#box4{
+  background-color:cornflowerblue;
+  position:relative;/*it allow to move according to its current position.*/
+  top:20px;
+  left:10px;
+}
+#box5{
+  background-color:gold;
+  position:absolute;/*position related to the closet positioned ancester.in this case its ancester is body*/
+  top:25px;
+}
+#box6{
+  background-color:hotpink;
+  position:fixed; /*position relative to browser and fixed it,means when user will scroll the page the particular element will not move */
+  left:500px;
+  top:40px;
+
+}
+#box7{
+  background-color:lawngreen;
+  position:sticky;
+  top:10px;
+  left:700px;
+
+}
+  
