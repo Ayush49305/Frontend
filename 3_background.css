@@ -1,0 +1,25 @@
+div{
+  height:100px;
+  width:100px;
+  border:2px solid black;
+  display:inline-block;
+}
+#box1{
+  background-color:indigo;
+  background-image:url("pic_1.jpg");
+  background-size:cover;/*it will fix the image without left any space in the element.image can also be cropped*/
+} 
+#box2{
+  background-color:lightpink;
+  background-image:url("pic_1.jpg");
+  background-size:contain;/*image can not be cropped and empty space can be possible but image will be fully visible.*/
+  background-repeat:no-repeat;/*In case,if image is smaller than conatiner the it will repeat the image to fully filled the container.*/
+}
+#box3{
+  background-color:coral;
+  background-image:url("pic_1.jpg");
+  background-size:auto;/*it will enlarge the image in the cntainer.it is by default*/
+}
+#box4{
+  background-color:aqua;
+}

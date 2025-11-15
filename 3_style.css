@@ -35,19 +35,25 @@ div{
   background-color:gold;
   position:absolute;/*position related to the closet positioned ancester.in this case its ancester is body*/
   top:25px;
+  z-index: 2;/*it decide the stack level of element.Overlapping element with larger z-index cover those with smaller one.*/ 
 }
 #box6{
   background-color:hotpink;
-  position:fixed; /*position relative to browser and fixed it,means when user will scroll the page the particular element will not move */
+  position:fixed; /*position relative to browser window and fixed it,means when user will scroll the page the particular element will not move */
   left:500px;
-  top:40px;
+  top:400px;
 
 }
 #box7{
   background-color:lawngreen;
-  position:sticky;
-  top:10px;
+  position:sticky; /* Normally, it scrolls along with the page like a relative element.
+  When it reaches a specified scroll position, it becomes fixed and stays “stuck” there until the parent container ends.In this case when box 7 reaches the postion 0px from top,after that it fixed.*/
+  top:0px;
   left:700px;
-
+}
+#box8{
+  background-color:indigo;
+  position:relative;
+  right:20px;
 }
   
