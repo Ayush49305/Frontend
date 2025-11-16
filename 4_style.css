@@ -1,3 +1,40 @@
 body{
-  text-align:center;
+  text-align:center
+}
+
+#Container{
+  height:200px;
+  width:800px;
+  display:flex;/*it is a modern layout system used to align, arrange, and distribute space among items inside a container efficiently and      responsively*/
+  flex-direction:row;/*It will fix the box from left to right.*/
+  /*flex-direction:row-reverse; it will fix the box from right to left.
+  flex-direction:column; it will fix the box from top to bottom. */
+  /*flex-direction:column-reverse; /*it will fix the box from bottom to top.*/
+
+  justify-content:center; /*justify content is used to Alignment along the main axis.(flex-start,flex-end,space-evenly,space-between are its variations.*/
+  flex-wrap:wrap-reverse;
+  
+}
+div{
+  height:100px;
+  width:100px;
+  display:inline-block;
+  border:2px solid black;
+}
+
+#box1{
+  background-color:aqua;
+}
+
+#box2{
+  background-color:green;
+}
+#box3{
+  background-color:chocolate;
+}
+#box4{
+  background-color:red;
+}
+#box5{
+  background-color:yellowgreen;
 }
