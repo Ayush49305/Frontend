@@ -2,25 +2,38 @@ body{
   text-align:center
 }
 
+div{
+  height:100px;
+  width:150px;
+  display:inline-block;
+  border:2px solid black;
+}
+
+
+
 #Container{
-  height:200px;
-  width:800px;
-  display:flex;/*it is a modern layout system used to align, arrange, and distribute space among items inside a container efficiently and      responsively*/
+  height:600px;
+  width:600px;
+  display:flex;/*it is a modern layout system used to align, arrange, and distribute space among items inside a container efficiently and responsively*/
+  
   flex-direction:row;/*It will fix the box from left to right.*/
   /*flex-direction:row-reverse; it will fix the box from right to left.
   flex-direction:column; it will fix the box from top to bottom. */
   /*flex-direction:column-reverse; /*it will fix the box from bottom to top.*/
 
   justify-content:center; /*justify content is used to Alignment along the main axis.(flex-start,flex-end,space-evenly,space-between are its variations.*/
-  flex-wrap:wrap-reverse;
+
+  /* flex-wrap in CSS is a property used with Flexbox that controls whether flex items should stay in a single line or wrap onto multiple lines when there isn’t enough space. */
+  /*flex-wrap:no-wrap; /*All items stay on one line and shrink if needed*/
+  flex-wrap:wrap; /*Items wrap onto multiple lines from left to right*/
+  /*flex-wrap:wrap-reverse;  items wrap onto multiple lines but in reverse order*/
+
+  align-items:center; /*align-items is a CSS Flexbox and Grid property used to control how items are aligned along the cross-axis*/
+
+  align-content:center;  /*align-content is a CSS Flexbox and Grid property used to control space distribution between multiple rows or columns along the cross axis — but it only works when items wrap onto multiple lines (flex-wrap: wrap).*/
   
 }
-div{
-  height:100px;
-  width:100px;
-  display:inline-block;
-  border:2px solid black;
-}
+
 
 #box1{
   background-color:aqua;
@@ -28,9 +41,11 @@ div{
 
 #box2{
   background-color:green;
+  height:200px;
 }
 #box3{
   background-color:chocolate;
+  height:75px;
 }
 #box4{
   background-color:red;

@@ -1,0 +1,19 @@
+div{
+  height:100px;
+  width:100px;
+  background-color: cadetblue;
+}
+
+/*Media Queries are a CSS feature used to apply different styles based on device characteristics such as screen size, width, height, resolution, orientation, and more. They are mainly used to create responsive web designs that look good on mobile, tablet, and desktop.*/
+
+@media (width : 600px){ /*This means when screen width will be 600px the color will be red.*/
+  div{
+    background-color:red;
+  }
+}
+
+@media (max-width : 500px){  /*when screen width will less or equal to 500px,color will be greenyellow.*/
+  div{
+    background-color:greenyellow;
+  }
+}
