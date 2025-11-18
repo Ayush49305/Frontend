@@ -1,0 +1,37 @@
+div{
+  height:150px;
+  width:200px;
+  background-color:chocolate;
+  border:2px solid black;
+  position:absolute;
+  top:200px;
+  left:400px;
+  /* transition-property: all;/*Activating the all transition property
+  transition-duration: 2s;
+  transition-timing-function: steps(5);  /*It will take 5 step to transite the element.
+  transition-delay:1s; */
+
+  transition:all 2s ease-in 1s; /*Shortcut way.*/
+
+  /* transform:rotate(45deg); */
+  /*transform:scale(2); used to increase or decrease the scale of element.*/
+  /*transform:scale(1,2);  /*used to increse.. in both direction for different size.*/
+
+
+}
+
+div:hover{ /*This means when we will move our cursor above the box the background-color and font color will change*/
+  background-color: darkgreen;  
+  color:bisque;
+  font-size:20x;
+  transform: translate(100px,80px); /*This will the box in x and y direction with 100px & 80px when we hover the cursor.*/
+
+  
+}
+
+div:active{
+  background-color:firebrick; /*Change the color of box when we will press & hold  above the box.*/
+  color:black;
+  
+  transform:skew(30deg);/*Used to skew the element.*/
+}
