@@ -7,14 +7,34 @@ div{
   top:200px;
   left:400px;
   animation-name:colorAnimate;
-  animation-duration:0.25s;
+  animation-duration:3s;
   /* animation-timing-function:ease-in; */
   animation-delay:1s;
   animation-iteration-count:infinite;
 
+  /* Animation shortand */
+  /* Animation:Myname Duration Timing-function Delay IterationCount Direction */
+
 }
 
 @keyframes colorAnimate{
-  from{ background-color:chocolate;}
-  to{background-color:green;}
+  /* from{left:0px;
+       background-color:chocolate;}
+  to{left:300px;
+     background-color:green;} */
+
+  0% {left:0px;
+      background-color:chocolate;
+  }
+
+  50%{
+    background-color:darkviolet;
+    color:white;
+  }
+
+  100%{left:300px;
+     background-color:green;
+
+  }
+
 }
